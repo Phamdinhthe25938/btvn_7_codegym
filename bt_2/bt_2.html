@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form{
+            width: 200px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: auto;
+            padding-left: 20px;
+        }
+        #number{
+            size: 30px;
+        }
+    </style>
+</head>
+<body>
+<form action=>
+     <h3>Amount:</h3>
+    <input type="number" name="yournumber" id="number"><br>
+     <h3>From Currency:</h3>
+    <select name="" id="selectCur_1">
+        <option value="1000">Viet Nam</option>
+        <option value="23000">USA</option>
+        <option value="4300">Nhan dan te</option>
+    </select>
+    <br>
+    <h3>To Currency:</h3>
+    <select name="" id="selectCur_2">
+        <option value="1000">Viet Nam</option>
+        <option value="23000">USA</option>
+        <option value="4300">Nhan dan te</option>
+    </select>
+    <br><br>
+    <input style="background-color: blue;color: #cccccc" type="submit" id="convert" value="Convert">
+</form>
+</body>
+</html>
+<script !src="">
+    let convertButton = document.getElementById("convert");
+    convertButton.onclick = function (){
+        let numberValue =Number( document.getElementById("number").value);
+        let selectCur_1Value = Number(document.getElementById("selectCur_1").value);
+        let selectCur_2Value = Number(document.getElementById("selectCur_2").value);
+        let result;
+        if(selectCur_1Value < selectCur_2Value){
+            result = numberValue*(selectCur_1Value/selectCur_2Value);
+            document.write("Result:"+result);
+        }
+        else if(selectCur_1Value > selectCur_2Value){
+            result = (numberValue*selectCur_1Value/selectCur_2Value)*1000;
+            document.write('Result:'+result);
+        }
+        else if(selectCur_1Value === selectCur_2Value){
+            document.write("Result:"+selectCur_1Value);
+        }
+    }
+
+</script>

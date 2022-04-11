@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+<!--    bai 1-->
+    let  physicsPoints;
+    let  biologyPoints;
+    let cemistryPoints;
+    physicsPoints= prompt("Nhap diem vat ly:");
+    biologyPoints = prompt("Nhap diem sinh hoc:");
+    cemistryPoints = prompt("Nhap diem hoa hoc:");
+    let  phyPoints = parseInt(physicsPoints);
+    let bioPoints = parseInt(biologyPoints);
+    let cemPoints = parseInt(cemistryPoints);
+    let totalScore = phyPoints+bioPoints+cemPoints;
+    let mediumScore =(totalScore)/3;
+    document.write("Tong diem la :"+totalScore);
+    document.write("Diem trung binh la: "+ mediumScore)
+
+//bai 2:
+    let celsius;
+    celsius = prompt("Nhap gia tri celsius:");
+    let celsiusInt = parseInt(celsius);
+    let fahrenheit = (9*celsiusInt)/5 + 32;
+    document.write("fahrenheit :"+fahrenheit );
+//bai 3:
+    let r3;
+    r3= prompt("Nhap ban kinh hinh tron:");
+    r3Int = parseInt(r3);
+    let S = r3*r3*3.14;
+    document.write("Dien tich hinh tron la "+S);
+//    bai 4
+    let r4;
+    r4 = prompt("nhap ban kinh hinh tron:");
+    r4Int =parseInt(r4);
+    let C = 2*3.14*r4Int;
+    document.write("Chu vi hinh tron :"+C)
+</script>
+</body>
+</html>

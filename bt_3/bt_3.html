@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form{
+            width: 400px;
+            height: 200px;
+            border: 1px solid #ccc;
+            padding-left: 20px;
+            margin: 100px 500px;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <h2>Caculator</h2>
+    <input type="number" name="younumberOne" id="valueOne">
+    <input type="number" name="yournumberTwo" id="valueTwo">
+    <br><br>
+    <input type="submit" value="Addition(+)" id="Addi">
+    <input type="submit" value="Subtraction(-)" id="Subt">
+    <input type="submit" value="Multiplication(x)" id="Mul">
+    <input type="submit" value="Divition(/)" id="Divi">
+
+</form>
+</body>
+</html>
+<script !src="">
+      let addSubmit = document.getElementById("Addi");
+      addSubmit.onclick = function (){
+          let valueOne = Number(document.getElementById("valueOne").value);
+          let valueTwo = Number(document.getElementById("valueTwo").value);
+          let result = valueOne+valueTwo;
+          document.write("Result="+result);
+      }
+      let subtSubmit = document.getElementById("Subt");
+      subtSubmit.onclick = function (){
+          let valueOne = Number(document.getElementById("valueOne").value);
+          let valueTwo = Number(document.getElementById("valueTwo").value);
+          let result = valueOne-valueTwo;
+          document.write("Result="+result);
+      }
+      let mulSubmit = document.getElementById("Mul");
+      mulSubmit.onclick = function (){
+          let valueOne = Number(document.getElementById("valueOne").value);
+          let valueTwo = Number(document.getElementById("valueTwo").value);
+          let result = valueOne*valueTwo;
+          document.write("Result="+result);
+      }
+      let diviSubmit = document.getElementById("Divi");
+      diviSubmit.onclick = function (){
+          let valueOne = Number(document.getElementById("valueOne").value);
+          let valueTwo = Number(document.getElementById("valueTwo").value);
+          let result = valueOne/valueTwo;
+          document.write("Result="+result);
+      }
+</script>
